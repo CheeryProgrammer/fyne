@@ -52,4 +52,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace fine.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.3.5
+replace fine.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.3.7
