@@ -2,7 +2,10 @@ module github.com/cheeryprogrammer/fyne/v2
 
 go 1.17
 
+retract [v2.3.6, v2.3.7]
+
 require (
+	fyne.io/fyne/v2 v2.0.0-00010101000000-000000000000
 	fyne.io/systray v1.10.1-0.20230722100817-88df1e0ffa9a
 	github.com/BurntSushi/toml v1.3.2
 	github.com/fogleman/gg v1.3.0
