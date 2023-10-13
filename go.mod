@@ -1,4 +1,4 @@
-module fyne.io/fyne/v2
+module github.com/cheeryprogrammer/fyne/v2
 
 go 1.17
 
@@ -49,3 +49,5 @@ require (
 	golang.org/x/text v0.12.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace fyne.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.0.0
