@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"

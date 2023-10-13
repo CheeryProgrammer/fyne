@@ -6,8 +6,8 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 func TestNewSimpleRenderer(t *testing.T) {

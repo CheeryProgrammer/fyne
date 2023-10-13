@@ -13,9 +13,9 @@ import (
 	"syscall"
 
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/svg"
 	"fyne.io/systray"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/svg"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/theme"

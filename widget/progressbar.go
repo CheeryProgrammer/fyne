@@ -7,10 +7,10 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/internal/cache"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	col "github.com/cheeryprogrammer/fyne/v2/internal/color"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 type progressRenderer struct {

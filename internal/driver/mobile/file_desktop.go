@@ -7,8 +7,8 @@ import (
 	"io"
 
 	"fyne.io/fyne/v2"
-	intRepo "fyne.io/fyne/v2/internal/repository"
 	"fyne.io/fyne/v2/storage/repository"
+	intRepo "github.com/cheeryprogrammer/fyne/v2/internal/repository"
 )
 
 func existsURI(fyne.URI) (bool, error) {

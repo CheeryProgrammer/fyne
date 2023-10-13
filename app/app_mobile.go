@@ -6,7 +6,7 @@ package app
 
 import (
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/driver/mobile"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver/mobile"
 )
 
 var systemTheme fyne.ThemeVariant

@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	intRepo "fyne.io/fyne/v2/internal/repository"
 	"fyne.io/fyne/v2/storage/repository"
+	"github.com/cheeryprogrammer/fyne/v2/internal"
+	"github.com/cheeryprogrammer/fyne/v2/internal/app"
+	intRepo "github.com/cheeryprogrammer/fyne/v2/internal/repository"
 )
 
 // Declare conformity with App interface

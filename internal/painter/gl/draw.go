@@ -6,7 +6,7 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	paint "fyne.io/fyne/v2/internal/painter"
+	paint "github.com/cheeryprogrammer/fyne/v2/internal/painter"
 )
 
 func (p *painter) createBuffer(points []float32) Buffer {

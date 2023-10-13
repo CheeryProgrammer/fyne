@@ -6,9 +6,9 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/driver/desktop"
-	internalwidget "fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
+	internalwidget "github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 var _ fyne.Widget = (*colorButton)(nil)
