@@ -5,7 +5,7 @@ go 1.17
 retract [v2.3.6, v2.3.7]
 
 require (
-	fyne.io/fyne/v2 v2.0.0-00010101000000-000000000000
+	fyne.io/fyne/v2 v2.4.1
 	fyne.io/systray v1.10.1-0.20230722100817-88df1e0ffa9a
 	github.com/BurntSushi/toml v1.3.2
 	github.com/fogleman/gg v1.3.0
@@ -53,4 +53,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace fyne.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.0.0
+replace fyne.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.0.2
