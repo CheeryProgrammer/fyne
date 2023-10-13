@@ -8,10 +8,10 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/test"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 func textRenderTexts(p fyne.Widget) []*canvas.Text {

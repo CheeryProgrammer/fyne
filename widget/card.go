@@ -3,8 +3,8 @@ package widget
 import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 // Card widget groups title, subtitle with content and a header image

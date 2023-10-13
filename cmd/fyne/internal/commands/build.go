@@ -13,8 +13,8 @@ import (
 	"github.com/urfave/cli/v2"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/cmd/fyne/internal/metadata"
-	"fyne.io/fyne/v2/cmd/fyne/internal/templates"
+	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/metadata"
+	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/templates"
 )
 
 // Builder generate the executables.

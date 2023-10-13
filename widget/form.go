@@ -6,9 +6,9 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 )
 
 // errFormItemInitialState defines the error if the initial validation for a FormItem result

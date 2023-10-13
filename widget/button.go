@@ -6,10 +6,10 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/driver/desktop"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/theme"
+	col "github.com/cheeryprogrammer/fyne/v2/internal/color"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 // ButtonAlign represents the horizontal alignment of a button.

@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"fyne.io/fyne/v2/canvas"
-	col "fyne.io/fyne/v2/internal/color"
 	_ "fyne.io/fyne/v2/test"
 	"fyne.io/fyne/v2/theme"
+	col "github.com/cheeryprogrammer/fyne/v2/internal/color"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -5,9 +5,9 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/painter/software"
 	"fyne.io/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter/software"
 	"github.com/stretchr/testify/assert"
 )
 

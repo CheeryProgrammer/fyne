@@ -7,11 +7,11 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/scale"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal"
+	"github.com/cheeryprogrammer/fyne/v2/internal/app"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
 )
 
 var (

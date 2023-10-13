@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
+	"github.com/cheeryprogrammer/fyne/v2/internal"
 )
 
 type preferences struct {

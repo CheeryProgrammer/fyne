@@ -13,9 +13,9 @@ import (
 	"fyne.io/fyne/v2/data/binding"
 	"fyne.io/fyne/v2/driver/desktop"
 	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
 	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 const (

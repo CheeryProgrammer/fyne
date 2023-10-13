@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/cache"
 	"fyne.io/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 	"github.com/stretchr/testify/assert"
 )
 

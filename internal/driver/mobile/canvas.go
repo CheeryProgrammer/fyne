@@ -9,11 +9,11 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/driver/common"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal/app"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver/common"
 )
 
 const (

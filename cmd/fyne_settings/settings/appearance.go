@@ -13,11 +13,11 @@ import (
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/internal/cache"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/tools/playground"
 	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 )
 
 const (

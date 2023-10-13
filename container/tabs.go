@@ -6,9 +6,9 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal"
 )
 
 // TabItem represents a single view in a tab view.

@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"fyne.io/fyne/v2/canvas"
-	internalTest "fyne.io/fyne/v2/internal/test"
 	"fyne.io/fyne/v2/test"
+	internalTest "github.com/cheeryprogrammer/fyne/v2/internal/test"
 
 	"github.com/stretchr/testify/assert"
 )

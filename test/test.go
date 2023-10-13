@@ -11,10 +11,10 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/painter/software"
-	"fyne.io/fyne/v2/internal/test"
+	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter/software"
+	"github.com/cheeryprogrammer/fyne/v2/internal/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

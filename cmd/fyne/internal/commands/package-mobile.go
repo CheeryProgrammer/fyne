@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/cmd/fyne/internal/mobile"
-	"fyne.io/fyne/v2/cmd/fyne/internal/templates"
+	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/mobile"
+	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/templates"
 
 	"golang.org/x/sys/execabs"
 )

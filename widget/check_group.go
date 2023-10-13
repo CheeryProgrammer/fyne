@@ -5,7 +5,7 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )
 
 // CheckGroup widget has a list of text labels and checkbox icons next to each.

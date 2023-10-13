@@ -16,11 +16,11 @@ import (
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/scale"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/test"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 	"github.com/stretchr/testify/assert"

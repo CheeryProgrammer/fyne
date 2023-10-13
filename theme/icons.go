@@ -2,7 +2,7 @@ package theme
 
 import (
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/svg"
+	"github.com/cheeryprogrammer/fyne/v2/internal/svg"
 )
 
 const (

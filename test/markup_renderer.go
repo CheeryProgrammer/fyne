@@ -10,10 +10,10 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/internal/driver"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/theme"
+	col "github.com/cheeryprogrammer/fyne/v2/internal/color"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
 )
 
 type markupRenderer struct {

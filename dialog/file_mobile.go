@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/driver/mobile"
 	"fyne.io/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver/mobile"
 )
 
 func (f *fileDialog) getPlaces() []favoriteItem {

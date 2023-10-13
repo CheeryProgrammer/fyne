@@ -7,10 +7,10 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/internal/driver"
-	internal_widget "fyne.io/fyne/v2/internal/widget"
 	_ "fyne.io/fyne/v2/test"
 	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
+	internal_widget "github.com/cheeryprogrammer/fyne/v2/internal/widget"
 
 	"github.com/stretchr/testify/assert"
 )
