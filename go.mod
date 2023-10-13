@@ -1,4 +1,4 @@
-module fyne.io/fyne/v2
+module github.com/cheeryprogrammer/fyne/v2
 
 go 1.17
 
@@ -36,6 +36,8 @@ require (
 	honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2
 )
 
+require fyne.io/fyne/v2 v2.4.1
+
 require (
 	github.com/akavel/rsrc v0.10.2 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.1 // indirect
@@ -49,3 +51,5 @@ require (
 	golang.org/x/text v0.12.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace fine.io/fyne/v2 => github.com/cheeryprogrammer/fyne/v2 v2.3.5
