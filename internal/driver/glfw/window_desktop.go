@@ -11,15 +11,15 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
 	"github.com/cheeryprogrammer/fyne/v2/internal/driver/common"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter/gl"
 	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
 	"github.com/cheeryprogrammer/fyne/v2/internal/svg"
+	"github.com/cheeryprogrammer/fyne/v2/storage"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )

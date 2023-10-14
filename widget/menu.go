@@ -1,11 +1,11 @@
 package widget
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
 	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
+	"github.com/cheeryprogrammer/fyne/v2/layout"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 )
 
 var _ fyne.Widget = (*Menu)(nil)

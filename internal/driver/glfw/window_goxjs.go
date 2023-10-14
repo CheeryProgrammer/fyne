@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
 	"github.com/cheeryprogrammer/fyne/v2/internal/driver/common"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter/gl"
 	"github.com/cheeryprogrammer/fyne/v2/internal/scale"

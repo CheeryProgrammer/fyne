@@ -3,7 +3,7 @@ package app
 import (
 	"sync"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
 )
 

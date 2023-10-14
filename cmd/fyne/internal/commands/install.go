@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/mobile"
 
 	"github.com/urfave/cli/v2"

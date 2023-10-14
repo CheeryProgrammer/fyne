@@ -16,7 +16,7 @@ import (
 	"github.com/srwiley/oksvg"
 	"github.com/srwiley/rasterx"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	col "github.com/cheeryprogrammer/fyne/v2/internal/color"
 )
 

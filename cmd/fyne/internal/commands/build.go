@@ -12,7 +12,7 @@ import (
 	"github.com/mcuadros/go-version"
 	"github.com/urfave/cli/v2"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/metadata"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/templates"
 )
@@ -181,12 +181,12 @@ func getFyneGoModVersion(runner runner) (string, error) {
 		return "", err
 	}
 
-	if parsed.Module.Path == "fyne.io/fyne/v2" {
+	if parsed.Module.Path == "github.com/cheeryprogrammer/fyne/v2" {
 		return "master", nil
 	}
 
 	for _, dep := range parsed.Require {
-		if dep.Path == "fyne.io/fyne/v2" {
+		if dep.Path == "github.com/cheeryprogrammer/fyne/v2" {
 			return dep.Version, nil
 		}
 	}

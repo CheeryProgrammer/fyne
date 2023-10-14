@@ -9,12 +9,12 @@ import (
 	"strings"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/container"
+	"github.com/cheeryprogrammer/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2/storage/repository"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/widget"
 )
 
 type viewLayout int

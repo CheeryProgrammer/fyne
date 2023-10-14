@@ -3,8 +3,8 @@ package app_test
 import (
 	"testing"
 
-	"fyne.io/fyne/v2/test"
 	"github.com/cheeryprogrammer/fyne/v2/internal/app"
+	"github.com/cheeryprogrammer/fyne/v2/test"
 )
 
 func TestApplySettings_BeforeContentSet(t *testing.T) {

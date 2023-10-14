@@ -3,8 +3,8 @@ package software
 import (
 	"image"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
 	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
 	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
 )

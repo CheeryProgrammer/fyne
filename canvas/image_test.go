@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
 	intRepo "github.com/cheeryprogrammer/fyne/v2/internal/repository"
+	"github.com/cheeryprogrammer/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2/storage/repository"
 
 	"github.com/stretchr/testify/assert"
 )

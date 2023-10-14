@@ -3,7 +3,7 @@ package driver
 import (
 	"math"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 )
 

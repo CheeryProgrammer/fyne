@@ -3,7 +3,7 @@ package internal
 import (
 	"sync"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/internal/app"
 	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )

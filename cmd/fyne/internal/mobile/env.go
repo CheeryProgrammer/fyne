@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/util"
 
 	"golang.org/x/mod/semver"

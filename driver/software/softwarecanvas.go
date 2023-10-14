@@ -1,8 +1,8 @@
 package software
 
 import (
-	"fyne.io/fyne/v2/test"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter/software"
+	"github.com/cheeryprogrammer/fyne/v2/test"
 )
 
 // NewCanvas creates a new canvas in memory that can render without hardware support.

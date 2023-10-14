@@ -3,7 +3,7 @@ package software
 import (
 	"image"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/internal/app"
 )
 

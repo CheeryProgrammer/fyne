@@ -1,11 +1,11 @@
 // Package widget defines the UI widgets within the Fyne toolkit.
-package widget // import "fyne.io/fyne/v2/widget"
+package widget // import "github.com/cheeryprogrammer/fyne/v2/widget"
 
 import (
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
 	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 	internalWidget "github.com/cheeryprogrammer/fyne/v2/internal/widget"
 )

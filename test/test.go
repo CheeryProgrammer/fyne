@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
 	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
 	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter/software"

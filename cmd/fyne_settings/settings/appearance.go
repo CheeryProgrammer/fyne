@@ -9,15 +9,15 @@ import (
 	"runtime"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/tools/playground"
-	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/app"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/container"
 	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
+	"github.com/cheeryprogrammer/fyne/v2/layout"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/tools/playground"
+	"github.com/cheeryprogrammer/fyne/v2/widget"
 )
 
 const (

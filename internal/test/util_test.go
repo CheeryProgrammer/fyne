@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"fyne.io/fyne/v2/theme"
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
 	"github.com/cheeryprogrammer/fyne/v2/internal/test"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 )
 
 func TestAssertImageMatches(t *testing.T) {

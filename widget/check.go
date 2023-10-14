@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/data/binding"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
 	"github.com/cheeryprogrammer/fyne/v2/internal/widget"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 )
 
 type checkRenderer struct {

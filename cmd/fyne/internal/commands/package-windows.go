@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/templates"
 	"github.com/fyne-io/image/ico"
 	"github.com/josephspurrier/goversioninfo"

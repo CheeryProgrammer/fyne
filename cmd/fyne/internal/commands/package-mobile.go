@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/mobile"
 	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne/internal/templates"
 

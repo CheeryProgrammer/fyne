@@ -5,10 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/driver/mobile"
 	"github.com/cheeryprogrammer/fyne/v2/internal"
 	"github.com/cheeryprogrammer/fyne/v2/internal/animation"
 	intapp "github.com/cheeryprogrammer/fyne/v2/internal/app"
@@ -25,6 +24,7 @@ import (
 	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
 	pgl "github.com/cheeryprogrammer/fyne/v2/internal/painter/gl"
 	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 )
 
 const (

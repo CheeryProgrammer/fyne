@@ -6,8 +6,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
 	"github.com/cheeryprogrammer/fyne/v2/internal"
 	"github.com/cheeryprogrammer/fyne/v2/internal/app"
 	"github.com/cheeryprogrammer/fyne/v2/internal/async"
