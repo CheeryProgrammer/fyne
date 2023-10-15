@@ -1,6 +1,8 @@
 package mobile
 
 import (
+	"fmt"
+
 	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/container"
 	"github.com/cheeryprogrammer/fyne/v2/internal/cache"
@@ -222,4 +224,8 @@ func (w *window) RescaleContext() {
 
 func (w *window) Context() interface{} {
 	return fyne.CurrentApp().Driver().(*mobileDriver).glctx
+}
+
+func (w *window) SetDecoration(bool) {
+	panic(fmt.Errorf("setting attributes not supported no mobile"))
 }

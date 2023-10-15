@@ -802,3 +802,14 @@ func (w *window) view() *glfw.Window {
 	}
 	return w.viewport
 }
+
+func (w *window) SetDecoration(decoration bool) {
+	runOnMain(func() {
+		w.decorate = decoration
+		if w.decorate {
+			w.viewport.SetAttrib(glfw.Decorated, glfw.True)
+		} else {
+			w.viewport.SetAttrib(glfw.Decorated, glfw.False)
+		}
+	})
+}
