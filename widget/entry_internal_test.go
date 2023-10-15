@@ -324,7 +324,7 @@ func TestEntry_MouseDownOnSelect(t *testing.T) {
 func TestEntry_PasteFromClipboard(t *testing.T) {
 	entry := NewEntry()
 
-	w := test.NewApp().NewWindow("")
+	w := test.NewApp().NewWindow("", false)
 	w.SetContent(entry)
 
 	testContent := "test"
@@ -341,7 +341,7 @@ func TestEntry_PasteFromClipboard_MultilineWrapping(t *testing.T) {
 	entry := NewMultiLineEntry()
 	entry.Wrapping = fyne.TextWrapWord
 
-	w := test.NewApp().NewWindow("")
+	w := test.NewApp().NewWindow("", false)
 	w.SetContent(entry)
 	w.Resize(fyne.NewSize(108, 64))
 

@@ -33,7 +33,7 @@ func NewDriver() fyne.Driver {
 	repository.Register("file", intRepo.NewFileRepository())
 
 	// make a single dummy window for rendering tests
-	drv.CreateWindow("")
+	drv.CreateWindow("", false)
 
 	return drv
 }
@@ -70,7 +70,7 @@ func (d *testDriver) CanvasForObject(fyne.CanvasObject) fyne.Canvas {
 	return d.windows[len(d.windows)-1].Canvas()
 }
 
-func (d *testDriver) CreateWindow(string) fyne.Window {
+func (d *testDriver) CreateWindow(string, bool) fyne.Window {
 	canvas := NewCanvas().(*testCanvas)
 	if d.painter != nil {
 		canvas.painter = d.painter

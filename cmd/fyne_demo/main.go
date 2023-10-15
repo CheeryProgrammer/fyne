@@ -26,7 +26,7 @@ func main() {
 	a.SetIcon(data.FyneLogo)
 	makeTray(a)
 	logLifecycle(a)
-	w := a.NewWindow("Fyne Demo")
+	w := a.NewWindow("Fyne Demo", false)
 	topWindow = w
 
 	w.SetMainMenu(makeMenu(a, w))
@@ -38,7 +38,7 @@ func main() {
 	intro.Wrapping = fyne.TextWrapWord
 	setTutorial := func(t tutorials.Tutorial) {
 		if fyne.CurrentDevice().IsMobile() {
-			child := a.NewWindow(t.Title)
+			child := a.NewWindow(t.Title, false)
 			topWindow = child
 			child.SetContent(t.View(topWindow))
 			child.Show()
@@ -107,7 +107,7 @@ func makeMenu(a fyne.App, w fyne.Window) *fyne.MainMenu {
 	)
 
 	openSettings := func() {
-		w := a.NewWindow("Fyne Settings")
+		w := a.NewWindow("Fyne Settings", false)
 		w.SetContent(settings.NewSettings().LoadAppearanceScreen(w))
 		w.Resize(fyne.NewSize(440, 520))
 		w.Show()

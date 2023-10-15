@@ -53,7 +53,7 @@ func (d *gLDriver) SetSystemTrayMenu(m *fyne.Menu) {
 		})
 
 		// the only way we know the app was asked to quit is if this window is asked to close...
-		w := d.CreateWindow("SystrayMonitor")
+		w := d.CreateWindow("SystrayMonitor", false)
 		w.(*window).create()
 		w.SetCloseIntercept(d.Quit)
 		w.SetOnClosed(systray.Quit)

@@ -20,7 +20,7 @@ type testWindow struct {
 
 // NewWindow creates and registers a new window for test purposes
 func NewWindow(content fyne.CanvasObject) fyne.Window {
-	window := fyne.CurrentApp().NewWindow("")
+	window := fyne.CurrentApp().NewWindow("", false)
 	window.SetContent(content)
 	return window
 }

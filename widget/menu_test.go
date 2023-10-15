@@ -16,7 +16,7 @@ func TestMenu_RefreshOptions(t *testing.T) {
 	test.NewApp()
 	defer test.NewApp()
 
-	w := fyne.CurrentApp().NewWindow("")
+	w := fyne.CurrentApp().NewWindow("", false)
 	defer w.Close()
 	w.SetPadded(false)
 	c := w.Canvas()
@@ -68,7 +68,7 @@ func TestMenu_TappedPaddingOrSeparator(t *testing.T) {
 	test.NewApp()
 	defer test.NewApp()
 
-	w := fyne.CurrentApp().NewWindow("")
+	w := fyne.CurrentApp().NewWindow("", false)
 	defer w.Close()
 	w.SetPadded(false)
 	c := w.Canvas()

@@ -62,8 +62,8 @@ func (a *fyneApp) UniqueID() string {
 	return a.uniqueID
 }
 
-func (a *fyneApp) NewWindow(title string) fyne.Window {
-	return a.driver.CreateWindow(title)
+func (a *fyneApp) NewWindow(title string, transparentFrameBuffer bool) fyne.Window {
+	return a.driver.CreateWindow(title, transparentFrameBuffer)
 }
 
 func (a *fyneApp) Run() {

@@ -20,7 +20,7 @@ func (t *themedApp) BuildType() fyne.BuildType {
 	return fyne.BuildStandard
 }
 
-func (t *themedApp) NewWindow(title string) fyne.Window {
+func (t *themedApp) NewWindow(title string, transparent bool) fyne.Window {
 	return nil
 }
 

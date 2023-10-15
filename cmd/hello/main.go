@@ -2,14 +2,19 @@
 package main
 
 import (
+	"image/color"
+
+	"github.com/cheeryprogrammer/fyne/v2"
 	"github.com/cheeryprogrammer/fyne/v2/app"
 	"github.com/cheeryprogrammer/fyne/v2/container"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 	"github.com/cheeryprogrammer/fyne/v2/widget"
 )
 
 func main() {
 	a := app.New()
 	w := a.NewWindow("Hello")
+	w := a.NewWindow("Hello", false)
 
 	hello := widget.NewLabel("Hello Fyne!")
 	w.SetContent(container.NewVBox(

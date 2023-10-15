@@ -1684,7 +1684,7 @@ func TestWindow_CloseInterception(t *testing.T) {
 
 	d := NewGLDriver().(*gLDriver)
 	t.Run("when closing window with #Close()", func(t *testing.T) {
-		w := d.CreateWindow("test").(*window)
+		w := d.CreateWindow("test", false).(*window)
 		w.create()
 		onIntercepted := false
 		onClosed := false
@@ -1699,7 +1699,7 @@ func TestWindow_CloseInterception(t *testing.T) {
 	})
 
 	t.Run("when window is closed from the outside (notified by GLFW callback)", func(t *testing.T) {
-		w := d.CreateWindow("test").(*window)
+		w := d.CreateWindow("test", false).(*window)
 		w.create()
 		onIntercepted := false
 		w.SetCloseIntercept(func() { onIntercepted = true })
@@ -1718,7 +1718,7 @@ func TestWindow_CloseInterception(t *testing.T) {
 	})
 
 	t.Run("when window is closed from the outside but no interceptor is set", func(t *testing.T) {
-		w := d.CreateWindow("test").(*window)
+		w := d.CreateWindow("test", false).(*window)
 		w.create()
 		closed := make(chan bool, 1)
 		w.SetOnClosed(func() { closed <- true })
@@ -1792,7 +1792,7 @@ func TestWindow_SetFullScreen(t *testing.T) {
 // }
 
 func createWindow(title string) fyne.Window {
-	w := d.CreateWindow(title)
+	w := d.CreateWindow(title, false)
 	w.(*window).create()
 	return w
 }

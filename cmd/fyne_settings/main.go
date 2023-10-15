@@ -11,7 +11,7 @@ func main() {
 	s := settings.NewSettings()
 
 	a := app.New()
-	w := a.NewWindow("Fyne Settings")
+	w := a.NewWindow("Fyne Settings", false)
 
 	appearance := s.LoadAppearanceScreen(w)
 	tabs := container.NewAppTabs(

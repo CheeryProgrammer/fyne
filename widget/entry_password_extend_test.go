@@ -17,7 +17,7 @@ type extendEntry struct {
 func TestEntry_Password_Extended_CreateRenderer(t *testing.T) {
 	a := test.NewApp()
 	defer test.NewApp()
-	w := a.NewWindow("")
+	w := a.NewWindow("", false)
 	entry := &extendEntry{}
 	entry.ExtendBaseWidget(entry)
 	entry.Password = true

@@ -64,7 +64,7 @@ func init() {
 	runtime.LockOSThread()
 }
 
-func (d *mobileDriver) CreateWindow(title string) fyne.Window {
+func (d *mobileDriver) CreateWindow(title string, _ bool) fyne.Window {
 	c := NewCanvas().(*mobileCanvas) // silence lint
 	ret := &window{title: title, canvas: c, isChild: len(d.windows) > 0}
 	ret.InitEventQueue()

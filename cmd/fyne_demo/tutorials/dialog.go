@@ -188,7 +188,7 @@ func showImage(f fyne.URIReadCloser) {
 	}
 	img.FillMode = canvas.ImageFillOriginal
 
-	w := fyne.CurrentApp().NewWindow(f.URI().Name())
+	w := fyne.CurrentApp().NewWindow(f.URI().Name(), false)
 	w.SetContent(container.NewScroll(img))
 	w.Resize(fyne.NewSize(320, 240))
 	w.Show()

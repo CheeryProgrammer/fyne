@@ -243,7 +243,7 @@ func TestMenu_TraverseMenu(t *testing.T) {
 	test.NewApp()
 	defer test.NewApp()
 
-	w := fyne.CurrentApp().NewWindow("")
+	w := fyne.CurrentApp().NewWindow("", false)
 	defer w.Close()
 	w.SetPadded(false)
 	c := w.Canvas()
@@ -338,7 +338,7 @@ func TestMenu_TriggerTraversedMenu(t *testing.T) {
 			fyne.NewMenuItem("Baz", func() { triggered = "3rd" }),
 		))
 		m.OnDismiss = func() { dismissed = true }
-		w := fyne.CurrentApp().NewWindow("")
+		w := fyne.CurrentApp().NewWindow("", false)
 		w.SetContent(internalWidget.NewOverlayContainer(m, w.Canvas(), nil))
 		return m
 	}

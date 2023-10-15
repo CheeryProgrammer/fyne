@@ -9,7 +9,7 @@ import (
 
 func TestApplySettings_BeforeContentSet(t *testing.T) {
 	a := test.NewApp()
-	_ = a.NewWindow("NoContent")
+	_ = a.NewWindow("NoContent", false)
 
 	app.ApplySettings(a.Settings(), a)
 }

@@ -44,8 +44,8 @@ func (a *testApp) SetIcon(fyne.Resource) {
 	// no-op
 }
 
-func (a *testApp) NewWindow(title string) fyne.Window {
-	return a.driver.CreateWindow(title)
+func (a *testApp) NewWindow(title string, transparent bool) fyne.Window {
+	return a.driver.CreateWindow(title, transparent)
 }
 
 func (a *testApp) OpenURL(url *url.URL) error {

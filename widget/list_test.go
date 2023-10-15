@@ -606,7 +606,7 @@ func setupList(t *testing.T) (*List, fyne.Window) {
 
 func TestList_LimitUpdateItem(t *testing.T) {
 	app := test.NewApp()
-	w := app.NewWindow("")
+	w := app.NewWindow("", false)
 	printOut := ""
 	list := NewList(
 		func() int {
@@ -630,7 +630,7 @@ func TestList_LimitUpdateItem(t *testing.T) {
 
 func TestList_RefreshUpdatesAllItems(t *testing.T) {
 	app := test.NewApp()
-	w := app.NewWindow("")
+	w := app.NewWindow("", false)
 	printOut := ""
 	list := NewList(
 		func() int {
