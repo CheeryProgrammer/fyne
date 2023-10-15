@@ -941,11 +941,11 @@ func (w *window) runOnMainWhenCreated(fn func()) {
 	w.pending = append(w.pending, fn)
 }
 
-func (d *gLDriver) CreateWindow(title string) fyne.Window {
-	return d.createWindow(title, true)
+func (d *gLDriver) CreateWindow(title string, transparentFrameBuffer bool) fyne.Window {
+	return d.createWindow(title, true, transparentFrameBuffer)
 }
 
-func (d *gLDriver) createWindow(title string, decorate bool) fyne.Window {
+func (d *gLDriver) createWindow(title string, decorate bool, transparentFrameBuffer bool) fyne.Window {
 	var ret *window
 	if title == "" {
 		title = defaultTitle
@@ -953,7 +953,7 @@ func (d *gLDriver) createWindow(title string, decorate bool) fyne.Window {
 	runOnMain(func() {
 		d.initGLFW()
 
-		ret = &window{title: title, decorate: decorate, driver: d}
+		ret = &window{title: title, decorate: decorate, transparentFrameBuffer: transparentFrameBuffer, driver: d}
 		// This queue is destroyed when the window is closed.
 		ret.InitEventQueue()
 		go ret.RunEventQueue()
@@ -993,7 +993,7 @@ func (w *window) isClosing() bool {
 }
 
 func (d *gLDriver) CreateSplashWindow() fyne.Window {
-	win := d.createWindow("", false)
+	win := d.createWindow("", false, false)
 	win.SetPadded(false)
 	win.CenterOnScreen()
 	return win
