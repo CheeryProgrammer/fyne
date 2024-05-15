@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/cmd/fyne_settings/settings"
-	"fyne.io/fyne/v2/container"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/app"
+	"github.com/cheeryprogrammer/fyne/v2/cmd/fyne_settings/settings"
+	"github.com/cheeryprogrammer/fyne/v2/container"
 )
 
 func main() {
 	s := settings.NewSettings()
 
 	a := app.New()
-	w := a.NewWindow("Fyne Settings")
+	w := a.NewWindow("Fyne Settings", false)
 
 	appearance := s.LoadAppearanceScreen(w)
 	tabs := container.NewAppTabs(

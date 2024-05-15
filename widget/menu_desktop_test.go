@@ -8,13 +8,13 @@ import (
 	"runtime"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	internalWidget "fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
+	internalWidget "github.com/cheeryprogrammer/fyne/v2/internal/widget"
+	"github.com/cheeryprogrammer/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/widget"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -243,7 +243,7 @@ func TestMenu_TraverseMenu(t *testing.T) {
 	test.NewApp()
 	defer test.NewApp()
 
-	w := fyne.CurrentApp().NewWindow("")
+	w := fyne.CurrentApp().NewWindow("", false)
 	defer w.Close()
 	w.SetPadded(false)
 	c := w.Canvas()
@@ -338,7 +338,7 @@ func TestMenu_TriggerTraversedMenu(t *testing.T) {
 			fyne.NewMenuItem("Baz", func() { triggered = "3rd" }),
 		))
 		m.OnDismiss = func() { dismissed = true }
-		w := fyne.CurrentApp().NewWindow("")
+		w := fyne.CurrentApp().NewWindow("", false)
 		w.SetContent(internalWidget.NewOverlayContainer(m, w.Canvas(), nil))
 		return m
 	}

@@ -102,4 +102,7 @@ type Window interface {
 
 	// Clipboard returns the system clipboard
 	Clipboard() Clipboard
+
+	// SetDecoration sets window decoration mode
+	SetDecoration(bool)
 }

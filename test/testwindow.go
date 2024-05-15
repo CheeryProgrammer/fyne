@@ -1,7 +1,7 @@
 package test
 
 import (
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 )
 
 type testWindow struct {
@@ -20,7 +20,7 @@ type testWindow struct {
 
 // NewWindow creates and registers a new window for test purposes
 func NewWindow(content fyne.CanvasObject) fyne.Window {
-	window := fyne.CurrentApp().NewWindow("")
+	window := fyne.CurrentApp().NewWindow("", false)
 	window.SetContent(content)
 	return window
 }
@@ -139,4 +139,8 @@ func (w *testWindow) ShowAndRun() {
 
 func (w *testWindow) Title() string {
 	return w.title
+}
+
+func (w *testWindow) SetDecoration(bool) {
+	// no-op
 }

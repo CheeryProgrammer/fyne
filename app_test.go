@@ -13,7 +13,7 @@ func (dummyApp) CloudProvider() CloudProvider {
 	return nil
 }
 
-func (dummyApp) NewWindow(title string) Window {
+func (dummyApp) NewWindow(title string, transparent bool) Window {
 	return nil
 }
 

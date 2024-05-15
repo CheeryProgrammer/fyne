@@ -11,15 +11,15 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/painter/gl"
-	"fyne.io/fyne/v2/internal/scale"
-	"fyne.io/fyne/v2/internal/svg"
-	"fyne.io/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver/common"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter/gl"
+	"github.com/cheeryprogrammer/fyne/v2/internal/scale"
+	"github.com/cheeryprogrammer/fyne/v2/internal/svg"
+	"github.com/cheeryprogrammer/fyne/v2/storage"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
@@ -62,12 +62,13 @@ var _ fyne.Window = (*window)(nil)
 type window struct {
 	common.Window
 
-	viewport   *glfw.Window
-	viewLock   sync.RWMutex
-	createLock sync.Once
-	decorate   bool
-	closing    bool
-	fixedSize  bool
+	viewport               *glfw.Window
+	viewLock               sync.RWMutex
+	createLock             sync.Once
+	decorate               bool
+	transparentFrameBuffer bool
+	closing                bool
+	fixedSize              bool
 
 	cursor       desktop.Cursor
 	customCursor *glfw.Cursor
@@ -716,6 +717,11 @@ func (w *window) create() {
 		} else {
 			glfw.WindowHint(glfw.Decorated, glfw.False)
 		}
+		if w.transparentFrameBuffer {
+			glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
+		} else {
+			glfw.WindowHint(glfw.TransparentFramebuffer, glfw.False)
+		}
 		if w.fixedSize {
 			glfw.WindowHint(glfw.Resizable, glfw.False)
 		} else {
@@ -801,4 +807,15 @@ func (w *window) view() *glfw.Window {
 		return nil
 	}
 	return w.viewport
+}
+
+func (w *window) SetDecoration(decoration bool) {
+	runOnMain(func() {
+		w.decorate = decoration
+		if w.decorate {
+			w.viewport.SetAttrib(glfw.Decorated, glfw.True)
+		} else {
+			w.viewport.SetAttrib(glfw.Decorated, glfw.False)
+		}
+	})
 }

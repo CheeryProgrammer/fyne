@@ -3,9 +3,9 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/test"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -17,7 +17,7 @@ type extendEntry struct {
 func TestEntry_Password_Extended_CreateRenderer(t *testing.T) {
 	a := test.NewApp()
 	defer test.NewApp()
-	w := a.NewWindow("")
+	w := a.NewWindow("", false)
 	entry := &extendEntry{}
 	entry.ExtendBaseWidget(entry)
 	entry.Password = true

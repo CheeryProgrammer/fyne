@@ -7,14 +7,14 @@ import (
 	"io"
 	"log"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/data/validation"
-	"fyne.io/fyne/v2/dialog"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/container"
+	"github.com/cheeryprogrammer/fyne/v2/data/validation"
+	"github.com/cheeryprogrammer/fyne/v2/dialog"
+	"github.com/cheeryprogrammer/fyne/v2/storage"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2/widget"
 )
 
 func confirmCallback(response bool) {
@@ -188,7 +188,7 @@ func showImage(f fyne.URIReadCloser) {
 	}
 	img.FillMode = canvas.ImageFillOriginal
 
-	w := fyne.CurrentApp().NewWindow(f.URI().Name())
+	w := fyne.CurrentApp().NewWindow(f.URI().Name(), false)
 	w.SetContent(container.NewScroll(img))
 	w.Resize(fyne.NewSize(320, 240))
 	w.Show()

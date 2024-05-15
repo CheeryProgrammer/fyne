@@ -4,12 +4,12 @@ import (
 	"image"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/painter/software"
-	intRepo "fyne.io/fyne/v2/internal/repository"
-	"fyne.io/fyne/v2/storage/repository"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/internal/driver"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter/software"
+	intRepo "github.com/cheeryprogrammer/fyne/v2/internal/repository"
+	"github.com/cheeryprogrammer/fyne/v2/storage/repository"
 )
 
 // SoftwarePainter describes a simple type that can render canvases
@@ -33,7 +33,7 @@ func NewDriver() fyne.Driver {
 	repository.Register("file", intRepo.NewFileRepository())
 
 	// make a single dummy window for rendering tests
-	drv.CreateWindow("")
+	drv.CreateWindow("", false)
 
 	return drv
 }
@@ -70,7 +70,7 @@ func (d *testDriver) CanvasForObject(fyne.CanvasObject) fyne.Canvas {
 	return d.windows[len(d.windows)-1].Canvas()
 }
 
-func (d *testDriver) CreateWindow(string) fyne.Window {
+func (d *testDriver) CreateWindow(string, bool) fyne.Window {
 	canvas := NewCanvas().(*testCanvas)
 	if d.painter != nil {
 		canvas.painter = d.painter

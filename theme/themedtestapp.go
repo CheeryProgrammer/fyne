@@ -5,7 +5,7 @@ package theme
 import (
 	"net/url"
 
-	"fyne.io/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2"
 )
 
 type themedApp struct {
@@ -20,7 +20,7 @@ func (t *themedApp) BuildType() fyne.BuildType {
 	return fyne.BuildStandard
 }
 
-func (t *themedApp) NewWindow(title string) fyne.Window {
+func (t *themedApp) NewWindow(title string, transparent bool) fyne.Window {
 	return nil
 }
 

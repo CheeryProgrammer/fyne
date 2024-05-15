@@ -12,13 +12,13 @@ import (
 	"sync"
 	"syscall"
 
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/svg"
 	"fyne.io/systray"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/internal/painter"
+	"github.com/cheeryprogrammer/fyne/v2/internal/svg"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 )
 
 var (
@@ -53,7 +53,7 @@ func (d *gLDriver) SetSystemTrayMenu(m *fyne.Menu) {
 		})
 
 		// the only way we know the app was asked to quit is if this window is asked to close...
-		w := d.CreateWindow("SystrayMonitor")
+		w := d.CreateWindow("SystrayMonitor", false)
 		w.(*window).create()
 		w.SetCloseIntercept(d.Quit)
 		w.SetOnClosed(systray.Quit)

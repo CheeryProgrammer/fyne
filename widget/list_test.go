@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/canvas"
+	"github.com/cheeryprogrammer/fyne/v2/data/binding"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
+	"github.com/cheeryprogrammer/fyne/v2/layout"
+	"github.com/cheeryprogrammer/fyne/v2/test"
+	"github.com/cheeryprogrammer/fyne/v2/theme"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -606,7 +606,7 @@ func setupList(t *testing.T) (*List, fyne.Window) {
 
 func TestList_LimitUpdateItem(t *testing.T) {
 	app := test.NewApp()
-	w := app.NewWindow("")
+	w := app.NewWindow("", false)
 	printOut := ""
 	list := NewList(
 		func() int {
@@ -630,7 +630,7 @@ func TestList_LimitUpdateItem(t *testing.T) {
 
 func TestList_RefreshUpdatesAllItems(t *testing.T) {
 	app := test.NewApp()
-	w := app.NewWindow("")
+	w := app.NewWindow("", false)
 	printOut := ""
 	list := NewList(
 		func() int {

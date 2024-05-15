@@ -1,6 +1,8 @@
-module fyne.io/fyne/v2
+module github.com/cheeryprogrammer/fyne/v2
 
 go 1.17
+
+retract [v2.3.6, v2.3.7]
 
 require (
 	fyne.io/systray v1.10.1-0.20230722100817-88df1e0ffa9a

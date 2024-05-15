@@ -3,10 +3,10 @@ package tutorials
 import (
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/widget"
+	"github.com/cheeryprogrammer/fyne/v2"
+	"github.com/cheeryprogrammer/fyne/v2/container"
+	"github.com/cheeryprogrammer/fyne/v2/driver/desktop"
+	"github.com/cheeryprogrammer/fyne/v2/widget"
 )
 
 func windowScreen(_ fyne.Window) fyne.CanvasObject {
@@ -15,12 +15,12 @@ func windowScreen(_ fyne.Window) fyne.CanvasObject {
 
 	windowGroup := container.NewVBox(
 		widget.NewButton("New window", func() {
-			w := fyne.CurrentApp().NewWindow("Hello")
+			w := fyne.CurrentApp().NewWindow("Hello", false)
 			w.SetContent(widget.NewLabel("Hello World!"))
 			w.Show()
 		}),
 		widget.NewButton("Fixed size window", func() {
-			w := fyne.CurrentApp().NewWindow("Fixed")
+			w := fyne.CurrentApp().NewWindow("Fixed", false)
 			w.SetContent(container.NewCenter(widget.NewLabel("Hello World!")))
 
 			w.Resize(fyne.NewSize(240, 180))
@@ -28,7 +28,7 @@ func windowScreen(_ fyne.Window) fyne.CanvasObject {
 			w.Show()
 		}),
 		widget.NewButton("Toggle between fixed/not fixed window size", func() {
-			w := fyne.CurrentApp().NewWindow("Toggle fixed size")
+			w := fyne.CurrentApp().NewWindow("Toggle fixed size", false)
 			w.SetContent(container.NewCenter(widget.NewCheck("Fixed size", func(toggle bool) {
 				if toggle {
 					w.Resize(fyne.NewSize(240, 180))
@@ -38,7 +38,7 @@ func windowScreen(_ fyne.Window) fyne.CanvasObject {
 			w.Show()
 		}),
 		widget.NewButton("Centered window", func() {
-			w := fyne.CurrentApp().NewWindow("Central")
+			w := fyne.CurrentApp().NewWindow("Central", false)
 			w.SetContent(container.NewCenter(widget.NewLabel("Hello World!")))
 
 			w.CenterOnScreen()
@@ -46,7 +46,7 @@ func windowScreen(_ fyne.Window) fyne.CanvasObject {
 		}),
 		widget.NewButton("Show/Hide window", func() {
 			if visibilityWindow == nil {
-				visibilityWindow = fyne.CurrentApp().NewWindow("Hello")
+				visibilityWindow = fyne.CurrentApp().NewWindow("Hello", false)
 				visibilityWindow.SetContent(widget.NewLabel("Hello World!"))
 				visibilityWindow.Show()
 				visibilityWindow.SetOnClosed(func() {
